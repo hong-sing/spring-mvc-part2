@@ -11,6 +11,7 @@ import org.hibernate.validator.constraints.ScriptAssert;
 //@ScriptAssert(lang = "javascript", script = "_this.price * _this.quantity >= 10000")  /*jdk14 이후 버전에서는 지원X https://www.inflearn.com/questions/794097/scriptassert-%EC%97%90%EB%9F%AC-%EB%AC%B8%EC%A0%9C */
 public class Item {
 
+    @NotNull //수정 요구사항 추가
     private Long id;
 
     @NotBlank
@@ -21,7 +22,7 @@ public class Item {
     private Integer price;
 
     @NotNull
-    @Max(9999)
+//    @Max(9999) //수정 요구사항 추가
     private Integer quantity;
 
     public Item() {
