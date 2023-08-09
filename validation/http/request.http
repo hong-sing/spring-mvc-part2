@@ -1,0 +1,29 @@
+### 1. 성공요청
+POST http://localhost:8080/validation/api/items/add
+Content-Type: application/json
+
+{
+  "itemName": "hello",
+  "price": 1000,
+  "quantity": 10
+}
+
+### 2. 실패요청
+POST http://localhost:8080/validation/api/items/add
+Content-Type: application/json
+
+{
+  "itemName": "hello",
+  "price": "A",
+  "quantity": 10
+}
+
+### 3. 검증 오류 요청
+POST http://localhost:8080/validation/api/items/add
+Content-Type: application/json
+
+{
+  "itemName": "hello",
+  "price": 1000,
+  "quantity": 10000
+}
