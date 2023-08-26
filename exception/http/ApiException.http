@@ -13,3 +13,11 @@ Accept: application/json
 ### 4. API 예외 처리 - HandlerExceptionResolver 활용
 GET http://localhost:8080/api/members/user-ex
 Accept: application/json
+
+### 5. 스프링이 제공하는 ExceptionResolver1
+GET http://localhost:8080/api/response-status-ex1
+Accept: application/json
+
+### 5. 스프링이 제공하는 ExceptionResolver1
+GET http://localhost:8080/api/response-status-ex2
+Accept: application/json
