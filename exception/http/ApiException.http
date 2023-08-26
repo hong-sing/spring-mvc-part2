@@ -29,3 +29,15 @@ Accept: application/json
 ### 6. 스프링이 제공하는 ExceptionResolver2 (실패)
 GET http://localhost:8080/api/default-handler-ex?data=qqq
 Accept: application/json
+
+### 7. @ExceptionHandler
+GET http://localhost:8080/api2/members/bad
+Accept: application/json
+
+### 7. @ExceptionHandler
+GET http://localhost:8080/api2/members/user-ex
+Accept: application/json
+
+### 7. @ExceptionHandler
+GET http://localhost:8080/api2/members/ex
+Accept: application/json
