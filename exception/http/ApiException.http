@@ -21,3 +21,11 @@ Accept: application/json
 ### 5. 스프링이 제공하는 ExceptionResolver1
 GET http://localhost:8080/api/response-status-ex2
 Accept: application/json
+
+### 6. 스프링이 제공하는 ExceptionResolver2 (성공)
+GET http://localhost:8080/api/default-handler-ex?data=10
+Accept: application/json
+
+### 6. 스프링이 제공하는 ExceptionResolver2 (실패)
+GET http://localhost:8080/api/default-handler-ex?data=qqq
+Accept: application/json
