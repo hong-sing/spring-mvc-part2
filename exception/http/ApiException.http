@@ -41,3 +41,7 @@ Accept: application/json
 ### 7. @ExceptionHandler
 GET http://localhost:8080/api2/members/ex
 Accept: application/json
+
+### 7. @ExceptionHandler
+GET http://localhost:8080/api3/members/ex
+Accept: application/json
